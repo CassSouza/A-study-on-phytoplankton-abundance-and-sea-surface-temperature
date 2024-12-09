@@ -53,3 +53,7 @@ trend_estimate.plot(label=area, color='#003f5c', ls='-')
 ```
 
 The others available componentes are: **observed**, **periodic_estimate** and **residual**.
+
+### Correlation
+
+The __[Correlation folder](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Correlation)__ contains the .py file necessary to assess the correlation between the Chl-a and SST for all areas considered in this present study. Output examples can be seen __[here](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Correlation/Correlation%20Examples)__.
