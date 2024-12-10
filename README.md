@@ -3,7 +3,7 @@ This repository consists of a collection of codes used in the study of the relat
 
 
 ## About the data
-The data used in this study was collected and distributed free of charge by the Ocean Color portal.
+The data used in this study was collected and distributed free of charge by the __[Ocean Color portal](https://oceancolor.gsfc.nasa.gov/)__.
 
 
 ## Folders
@@ -57,3 +57,17 @@ The others available componentes are: **observed**, **periodic_estimate** and **
 ### Correlation
 
 The __[Correlation folder](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Correlation)__ contains the .py file necessary to assess the correlation between the Chl-a and SST for all areas considered in this present study. Output examples can be seen __[here](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Correlation/Correlation%20Examples)__.
+
+Since the samples aren't normally distributed, the spearman correlation coefficient are used instead of the pearson correlation coefficient:
+
+``` py
+stats.spearmanr(df_plot['Mean_temp'], df_plot['Mean_chla'])
+```
+
+### Linear Regression
+
+The __[Linear Regression folder](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Linear%20Regression)__ contains the .py files necessary to perform the linear regression analysis and the ANCOVA test. 
+
+The ANVOCA test was performed to assesses if the regression lines are different from each other. 
+
+Examples of the linear regression algorithm and ANCOVA test applied to the sst data can be seen __[here](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Linear%20Regression/Linear%20Regression%20Examples)__.
