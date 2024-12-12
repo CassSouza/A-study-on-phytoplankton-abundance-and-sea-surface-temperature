@@ -7,7 +7,7 @@ import statsmodels.api as sm
 #Get the git root directory
 git_repo = git.Repo('.', search_parent_directories=True)
 
-#Load the SST dataset
+#Load the chla dataset
 df_chla = pd.read_csv(f"{git_repo.working_tree_dir}\\Databases\\Stats_chla.csv")
 df_chla = df_chla.drop('Unnamed: 0', axis=1)
 
