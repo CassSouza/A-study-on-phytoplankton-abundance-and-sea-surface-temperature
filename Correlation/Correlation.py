@@ -7,7 +7,7 @@ from scipy import stats
 #Get the git root directory
 git_repo = git.Repo('.', search_parent_directories=True)
 
-#Load the SST dataset
+#Load the dataset
 df = pd.read_csv(f"{git_repo.working_tree_dir}\\Databases\\Dataframe_SST_chlr.csv.csv")
 df = df.drop('Unnamed: 0', axis=1)
 
@@ -65,7 +65,7 @@ def plot_correlation(area):
         
         #Correlation fit
         statistic = stats.spearmanr(df_dual['Mean_temp'], df_dual['Mean_chla'])
-        r = round(statistic[0], 2) #correlação
+        r = round(statistic[0], 2) #correlation
         p = statistic[1] #pvalue
 
         
@@ -94,7 +94,7 @@ def plot_correlation(area):
             
             #Correlation fit
             statistic = stats.spearmanr(df['Mean_temp'], df['Mean_chla'])
-            r = round(statistic[0], 2) #correlação
+            r = round(statistic[0], 2) #correlation
             p = statistic[1] #pvalue
 
             
@@ -104,7 +104,7 @@ def plot_correlation(area):
 
     plt.ScalarFormatter(useMathText=True)
     plt.text(12.2,0.1, f'ρ = {r}')
-    plt.text(15.8 ,0.1, f'p = {p:.2e}') #plotando texto do p
+    plt.text(15.8 ,0.1, f'p = {p:.2e}') 
 
     # Layout configs
     plt.xlim(12, 35) 

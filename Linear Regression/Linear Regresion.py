@@ -9,7 +9,7 @@ from scipy import stats
 #Get the git root directory
 git_repo = git.Repo('.', search_parent_directories=True)
 
-#Load the SST dataset
+#Load the dataset
 db = pd.read_csv(f"{git_repo.working_tree_dir}\\Databases\\Dataframe_sst_chlr_anual.csv")
 db = db.drop('Unnamed: 0', axis=1)
 
