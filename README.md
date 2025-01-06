@@ -43,7 +43,7 @@ The __[Databases folder](https://github.com/CassSouza/A-study-on-phytoplankton-a
 
 
 ### Seasonal Decompose 
-The __[Seasonal Decompose folder](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Seasonal%20Decompose)__ contains the .py files necessary to performe the seasonal decomposition of the data. 
+The __[Seasonal Decompose folder](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Seasonal%20Decompose)__ contains the .py files necessary to perform the seasonal decomposition of the data. 
 All decomposition components are available, being necessary manually set what component that will be the output for the plot image.
 
 In the example below, the output will be related to the trend component (can be seen __[here](https://github.com/CassSouza/A-study-on-phytoplankton-abundance-and-sea-surface-temperature/tree/main/Seasonal%20Decompose/Seasonal%20Decompose%20Examples)__). 
