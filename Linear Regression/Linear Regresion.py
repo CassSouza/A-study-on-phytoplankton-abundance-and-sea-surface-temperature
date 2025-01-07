@@ -41,7 +41,7 @@ for area in db['Area'].unique():
     if area == 'SP':
         ax.scatter(x, y, label=area, c='#003f5c')
 
-        plt.ylim(22,26) #limites eixo 
+        plt.ylim(22,26) 
         plt.text(pd.to_datetime('2003-02-01', format = '%Y-%m-%d'), 22.1, f'$r^2$ = {r}') #r squared
         plt.text(pd.to_datetime('2007-02-01', format = '%Y-%m-%d'), 22.1, f'p = {p}') #p value
         plt.text(pd.to_datetime('2011-02-01', format = '%Y-%m-%d'), 22.1, f'β = {b}') #B value
@@ -49,7 +49,7 @@ for area in db['Area'].unique():
     if area == 'PR':
         plt.scatter(x, y, label=area, c='#ff6361')
 
-        plt.ylim(22,26) #limites eixo 
+        plt.ylim(22,26) 
         plt.text(pd.to_datetime('2003-02-01', format = '%Y-%m-%d'), 22.1, f'$r^2$ = {r}') #r squared
         plt.text(pd.to_datetime('2007-02-01', format = '%Y-%m-%d'), 22.1, f'p = {p}') #p value
         plt.text(pd.to_datetime('2011-02-01', format = '%Y-%m-%d'), 22.1, f'β = {b}') #B value
@@ -57,7 +57,7 @@ for area in db['Area'].unique():
     if area == 'SC':
         plt.scatter(x, y, label=area, c='#ffa600')
 
-        plt.ylim(20,24) #limites eixo 
+        plt.ylim(20,24) 
         plt.text(pd.to_datetime('2003-02-01', format = '%Y-%m-%d'), 20.1, f'$r^2$ = {r}') #r squared
         plt.text(pd.to_datetime('2007-02-01', format = '%Y-%m-%d'), 20.1, f'p = {p}') #p value
         plt.text(pd.to_datetime('2011-02-01', format = '%Y-%m-%d'), 20.1, f'β = {b}') #B value
@@ -65,7 +65,7 @@ for area in db['Area'].unique():
     if area == 'APA':
         plt.scatter(x, y, label=area, c='#b30000', marker='x', alpha=0.6)
 
-        plt.ylim(20,24) #limites eixo 
+        plt.ylim(20,24)
         plt.text(pd.to_datetime('2003-02-01', format = '%Y-%m-%d'), 20.1, f'$r^2$ = {r}') #r squared
         plt.text(pd.to_datetime('2007-02-01', format = '%Y-%m-%d'), 20.1, f'p = {p}') #p value
         plt.text(pd.to_datetime('2011-02-01', format = '%Y-%m-%d'), 20.1, f'β = {b}') #B value

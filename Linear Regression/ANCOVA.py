@@ -72,15 +72,15 @@ for area in db['Area'].unique():
     data = np.concatenate(data).ravel()
 
     if area == 'SP':
-        ax.scatter(x_time, data, label=area, c='#003f5c') #plotando os dados de Mean_temp
+        ax.scatter(x_time, data, label=area, c='#003f5c') 
         ax.plot(x_time, df_plot['prediction'], c='#003f5c')
     
     if area == 'PR':
-        ax.scatter(x_time, data, label=area, c='#ff6361') #plotando os dados de Mean_temp
+        ax.scatter(x_time, data, label=area, c='#ff6361') 
         ax.plot(x_time, df_plot['prediction'], c='#ff6361')
     
     if area == 'SC':
-        ax.scatter(x_time, data, label=area, c='#ffa600') #plotando os dados de Mean_temp
+        ax.scatter(x_time, data, label=area, c='#ffa600') 
         ax.plot(x_time, df_plot['prediction'], c='#ffa600')
 
 plt.title(f'ANCOVA - Temperature Variation (C°)', loc='center', fontsize=16)
