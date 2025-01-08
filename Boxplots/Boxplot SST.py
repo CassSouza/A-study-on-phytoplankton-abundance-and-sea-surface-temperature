@@ -19,7 +19,7 @@ for year in years:
         df = df_sst.loc[(df_sst['state'] == area) & (df_sst['year'] == year)]
 
         #Data cleaning
-        df = df.replace(-32767.0, np.nan) #Ignore the Error value 
+        df = df.replace(-32767.0, np.nan) #Replace the error value for NaN
 
         #Styles
         medianprops = dict(linestyle='-.', linewidth=2.5, color='firebrick')

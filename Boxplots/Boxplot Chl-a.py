@@ -19,7 +19,7 @@ for year in years:
         df = df_chla.loc[(df_chla['state'] == area) & (df_chla['year'] == year)]
 
         #Data cleaning
-        df = df.replace(-32767.0, np.nan) #Ignore the Error value 
+        df = df.replace(-32767.0, np.nan) #Replace the error value for NaN
         df.loc[df['chlor_a'] > 8, 'chlor_a'] = np.nan 
 
         #Styles
