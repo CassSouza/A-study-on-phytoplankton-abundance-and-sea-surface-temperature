@@ -72,11 +72,13 @@ for area in db['Area'].unique():
 
     #Plot confis
     plt.title(f'Temperature Variation (C°) - {area}', loc='center', fontsize=18)
-    plt.xlabel('Temperature (C°)', fontsize=14)
-    plt.ylabel('Year', fontsize=14)
+    plt.xlabel('Year', fontsize=14)
+    plt.ylabel('Temperature (C°)', fontsize=14)
 
     plt.xlim([pd.to_datetime('2002-06-01', format = '%Y-%m-%d'), pd.to_datetime('2023-12-01', format = '%Y-%m-%d')])
 
     plt.legend(loc='upper right')
 
     plt.savefig(f'{git_repo.working_tree_dir}\\Linear Regression\\Linear Regression Examples\\LR {area}.jpeg', dpi=300, bbox_inches='tight')
+
+    
