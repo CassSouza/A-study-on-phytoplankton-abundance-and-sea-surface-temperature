@@ -1,11 +1,11 @@
 # A study on phytoplankton abundance and sea surface temperature
-This repository consists of a collection of codes used in the study of the relationship between sea surface temperature (SST) and phytoplankton abundance (Chl-a), as well as future predictions and their implications.
+This repository contains a collection of code used in the study of the relationship between sea surface temperature (SST) and phytoplankton abundance (Chl-a), as well as future predictions and their implications
 
-The published article can be seen __[here](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.11724)__.
+The published article can be found __[here](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.11724)__.
 
 
 ## About the data
-The data used in this study was collected and distributed free of charge by the __[Ocean Color portal](https://oceancolor.gsfc.nasa.gov/)__.
+The crude data used in this study were collected and distributed free of charge by the __[Ocean Color portal](https://oceancolor.gsfc.nasa.gov/)__.
 
 
 ## Folders
